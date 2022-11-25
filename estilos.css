@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;700&family=Raleway:ital,wght@0,200;0,400;1,100&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter Tight', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+}
+
+.form{
+    background-color: white;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    margin: auto;
+}
+
+.form-container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+
+.form-title{
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: .4em;
+}
+
+.form-input{
+    font-family: inherit;
+    font-size: 1rem; /* 1rem = 16px*/
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #cccccc;
+    border-radius: 0.20em;
+}
+
+.form-input-message{
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: 1.5em;
+}
+
+.form-cta{
+    font-family: inherit;
+    background-color: #0b75d8;
+    color: white;
+    border: none;
+    font-size: 300;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+@media(max-width:450px){
+    .form{
+        padding: 3.5em 1em;
+    }
+}
